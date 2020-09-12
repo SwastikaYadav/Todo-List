@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(120deg, #6B4080 0%, #e7daece5 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+  }
+  .full{
+  }
+  header {
+    font-size: 1.5rem;
+    color: #4a205f;
+  }
+  
+  header,
+  form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2PX solid #6B4080;
+    background: white;
+  }
+  form button {
+    background: #6b4080;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: #f7fffe;
+  }
+  form button:hover {
+    color: #6B4080;
+    background: #f7fffe;
+  }
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  
+  .todo {
+    margin: 1rem;
+    background: white;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+  }
+  .filter-todo {
+    padding: 0.55rem;
+  }
+  .todo li {
+    flex: 1;
+  }
+  
+  .trash-btn,
+  .complete-btn {
+    background: #6B4080;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .complete-btn {
+    background: rgb(11, 212, 162);
+  }
+  .todo-item {
+    padding: 0rem 0.5rem;
+    color: #4b4b4b;
+    min-width: 9rem;
+  }
+  .fa-trash,
+  .fa-check {
+    pointer-events: none;
+   }
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  /*CUSTOM SELECTOR */
+  select {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+
+    background-image: none;
+  }
+  
+  /* Custom Select */
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #6B4080;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    border: 2PX solid #6b4080;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    background: #6B4080;
+    cursor: pointer;
+    pointer-events: none;
+
+  }
+  /* Transition 
+
+  .select:hover::after {
+    transform: scale(1.5);
+  }*/
+  
